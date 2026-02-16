@@ -33,9 +33,9 @@ end
 # Expected: check_access(15) => "access denied"
 def check_access(age)
   # TODO: Use unless statement (opposite of if)
-  return "access denied" if age < 18
-
-  "access granted"
+  return "access granted" unless age < 18
+  
+  "access denied"
 end
 
 # Exercise 4: Case statement (switch)
@@ -108,6 +108,7 @@ def process_numbers(arr)
 
   for num in arr
     break if num >= 20
+    next if num >= 10
     result << num
   end
 
