@@ -133,7 +133,7 @@ class LightButton
   # TODO: Implement render method
   # Return "Rendering light button"
   def render
-    nil
+    "Rendering light button"
   end
 end
 
@@ -143,7 +143,7 @@ class DarkButton
   # TODO: Implement render method
   # Return "Rendering dark button"
   def render
-    nil
+    "Rendering dark button"
   end
 end
 
@@ -153,7 +153,7 @@ class LightTextField
   # TODO: Implement render method
   # Return "Rendering light text field"
   def render
-    nil
+    "Rendering light text field"
   end
 end
 
@@ -163,7 +163,7 @@ class DarkTextField
   # TODO: Implement render method
   # Return "Rendering dark text field"
   def render
-    nil
+    "Rendering dark text field"
   end
 end
 
@@ -182,11 +182,11 @@ class LightThemeFactory < ThemeFactory
   # TODO: Implement create_text_field to return LightTextField
   
   def create_button
-    nil
+    LightButton.new
   end
   
   def create_text_field
-    nil
+    LightTextField.new
   end
 end
 
@@ -195,11 +195,11 @@ class DarkThemeFactory < ThemeFactory
   # TODO: Implement create_text_field to return DarkTextField
   
   def create_button
-    nil
+    DarkButton.new
   end
   
   def create_text_field
-    nil
+    DarkTextField.new
   end
 end
 
