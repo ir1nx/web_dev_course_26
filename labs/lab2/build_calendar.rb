@@ -172,7 +172,7 @@ if ARGV.size != 4
 end
 
 begin
-  builder = CalendarBuilder.new(ARGV[0], ARGV[1], ARGV[2], ARGV[3])
+  builder = CalendarBuilder.new(*ARGV)
   builder.build
 rescue => e
   puts "Ошибка: #{e.message}"
